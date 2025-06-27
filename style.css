@@ -118,7 +118,7 @@ header {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border: 3px solid white;
+  border: 3px black;
 }
 
 .entrada-blog p {
@@ -126,7 +126,6 @@ header {
   line-height: 1.4;
   }
 
-/* Productos */
                                                 #productos {
   padding: 50px 20px;
   background-color: #0c2392;
