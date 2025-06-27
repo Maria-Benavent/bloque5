@@ -148,8 +148,7 @@ header {
   width: 220px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
-
-.product-img {
+.producto-img {
   width: 220px;
   height: 220px;
   object-fit: cover;
