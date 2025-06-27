@@ -109,11 +109,14 @@ header {
   background-color: white;
   color: #0c2392 !important;
 }
-
+ <!-- Sección de novedades -->
 .entrada-img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-
+.entrada-blog p {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
