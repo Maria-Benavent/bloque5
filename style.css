@@ -111,14 +111,14 @@ header {
 }
  <!-- Sección de novedades -->
 .entrada-img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* un pelín más suave y visible */
-  border: 3px solid white; /* marco blanco fino */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
 }
 
 .entrada-blog p {
