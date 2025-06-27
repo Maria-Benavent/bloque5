@@ -55,7 +55,7 @@ header {
   display: block;
   margin: 0 auto;
 }
-/* Sección de contacto /*
+
 
 #contacto {
   padding: 50px 20px;
@@ -109,7 +109,7 @@ header {
   background-color: white;
   color: #0c2392 !important;
 }
-/* Sección de novedades /*
+
 .entrada-img {
   max-width: 150px !important;
   height: auto !important;
@@ -125,7 +125,4 @@ header {
 .entrada-blog p {
   margin-bottom: 6px;
   line-height: 1.4;
-}
-body {
-  background-color: hotpink;
-}
+
