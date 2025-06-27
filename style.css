@@ -57,7 +57,7 @@ header {
 }
 
 
-#contacto {
+                                                      #contacto {
   padding: 50px 20px;
   background-color: #0c2392;
   color: white;
@@ -124,8 +124,10 @@ header {
 .entrada-blog p {
   margin-bottom: 6px;
   line-height: 1.4;
+  }
+
 /* Productos */
-#productos {
+                                                #productos {
   padding: 50px 20px;
   background-color: #0c2392;
   color: white;
