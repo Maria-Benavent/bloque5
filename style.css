@@ -56,53 +56,46 @@ header {
   margin: 0 auto;
 }
  <!-- Sección de contacto -->
-      #contacto {
-        padding: 50px 20px;
-        background-color: white;
-        color: #0c2392;
-        text-align: center;
-      }
-      
-      #contacto h2 {
-        font-family: 'Racing Sans One', sans-serif;
-        font-size: 2em;
-        margin-bottom: 20px;
-      }
-      
-      .contact-items {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-      }
-      
-      .contact-item a {
-        text-decoration: none;
-        color: #0c2392;
-        font-size: 1.1em;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      
-      .contact-item i {
-        font-size: 24px;
-        color: #0c2392;
-      }
-      
-      .cta-email {
-        display: inline-block;
-        background-color: #0c2392;
-        color: white;
-        padding: 12px 24px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-      
-      .cta-email:hover {
-        background-color: #001f6b;
-      }
+     #contacto {
+  padding: 50px 20px;
+  background-color: white;
+  color: #0c2392;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #0c2392;
+  font-size: 1.1em;
+}
+
+.cta-email {
+  display: inline-block;
+  background-color: #0c2392;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-email:hover {
+  background-color: #001f6b;
+}
+
 
