@@ -111,10 +111,13 @@ header {
 }
  <!-- Sección de novedades -->
 .entrada-img {
-  width: 100%;
+  width: 60%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 20px auto;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
+
 
 .entrada-blog p {
   margin-bottom: 6px;
