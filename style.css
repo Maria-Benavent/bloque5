@@ -19,9 +19,10 @@ p {
   color: #f0f0f0;
 }
 nav {
-  background-color: #001b6d;
+  background-color: #000c3f; /* azul navy más oscuro */
   padding: 10px 0;
 }
+
 
 .nav {
   list-style-type: none;
