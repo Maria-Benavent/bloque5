@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos - Bloque 5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Solitreo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="logotext.png" alt="Logo Bloque 5" class="logo">
+  </header>
+
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="productos">
+    <h2>Nuestros productos</h2>
+
+    <div class="productos-container">
+      <div class="producto">
+        <img src="camiseta1.jpg" alt="Camiseta Bloque 5" class="producto-img">
+        <h3>Camiseta 'Vuelas'</h3>
+        <p>20,00 €</p>
+      </div>
+      <div class="producto">
+        <img src="sudadera1.jpg" alt="Sudadera Bloque 5" class="producto-img">
+        <h3>Sudadera Eurofighter</h3>
+        <p>35,00 €</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
