@@ -56,12 +56,13 @@ header {
   margin: 0 auto;
 }
  <!-- Sección de contacto -->
-     #contacto {
+ #contacto {
   padding: 50px 20px;
-  background-color: white;
-  color: #0c2392;
+  background-color: #0c2392;
+  color: white;
   text-align: center;
 }
+
 
 #contacto h2 {
   font-family: 'Racing Sans One', sans-serif;
@@ -79,8 +80,10 @@ header {
 
 .contact-item a {
   text-decoration: none;
-  color: #0c2392;
+  color: white;
   font-size: 1.1em;
+}
+
 }
 
 .cta-email {
@@ -95,7 +98,7 @@ header {
 }
 
 .cta-email:hover {
-  background-color: #001f6b;
+  background-color: #f0f0f0;
 }
 
 
