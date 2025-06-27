@@ -18,3 +18,29 @@ p {
   font-size: 1.3em;
   color: #f0f0f0;
 }
+nav {
+  background-color: #001b6d;
+  padding: 10px 0;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+  color: #ffcc00;
+}
