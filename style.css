@@ -125,3 +125,6 @@ header {
   margin-bottom: 6px;
   line-height: 1.4;
 }
+body {
+  background-color: hotpink;
+}
