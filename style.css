@@ -121,9 +121,50 @@ header {
   border: 3px solid white;
 }
 
-
-
 .entrada-blog p {
   margin-bottom: 6px;
   line-height: 1.4;
+/* Productos */
+#productos {
+  padding: 50px 20px;
+  background-color: #0c2392;
+  color: white;
+  text-align: center;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.producto {
+  background-color: #000c3f;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin-bottom: 12px;
+}
+
+.producto h3 {
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.producto p {
+  font-size: 1em;
+  color: #ffcc00;
+  margin: 6px 0 0 0;
+}
 
