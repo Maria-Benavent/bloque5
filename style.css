@@ -55,7 +55,7 @@ header {
   display: block;
   margin: 0 auto;
 }
- <!-- Sección de contacto -->
+/* Sección de contacto /*
 
 #contacto {
   padding: 50px 20px;
@@ -109,7 +109,7 @@ header {
   background-color: white;
   color: #0c2392 !important;
 }
- <!-- Sección de novedades -->
+/* Sección de novedades /*
 .entrada-img {
   width: 150px;
   height: 150px;
