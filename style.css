@@ -56,13 +56,13 @@ header {
   margin: 0 auto;
 }
  <!-- Sección de contacto -->
- #contacto {
+
+#contacto {
   padding: 50px 20px;
   background-color: #0c2392;
   color: white;
   text-align: center;
 }
-
 
 #contacto h2 {
   font-family: 'Racing Sans One', sans-serif;
@@ -82,6 +82,7 @@ header {
   color: white !important;
   text-decoration: underline;
 }
+
 .contact-items hr {
   border: none;
   border-top: 1px solid white;
@@ -89,16 +90,16 @@ header {
   margin: 8px auto;
 }
 
-}
-
 .cta-email {
   display: inline-block;
-  background-color: #0c2392;
-  color: white;
+  background-color: white;
+  color: #0c2392;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-email:hover {
