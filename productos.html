@@ -94,26 +94,29 @@
   </div>
 </section>
 
-<script>
    <!--Carrusel básico -->
+ <script>
   document.querySelectorAll('.carousel').forEach(carousel => {
     const imgs = carousel.querySelectorAll('.producto-img');
     let index = 0;
 
-    carousel.querySelector('.next').addEventListener('click', () => {
+    const showImage = (newIndex) => {
       imgs[index].classList.remove('active');
-      index = (index + 1) % imgs.length;
+      index = newIndex;
       imgs[index].classList.add('active');
+    };
+
+    carousel.querySelector('.next').addEventListener('click', () => {
+      const newIndex = (index + 1) % imgs.length;
+      showImage(newIndex);
     });
 
     carousel.querySelector('.prev').addEventListener('click', () => {
-      imgs[index].classList.remove('active');
-      index = (index - 1 + imgs.length) % imgs.length;
-      imgs[index].classList.add('active');
+      const newIndex = (index - 1 + imgs.length) % imgs.length;
+      showImage(newIndex);
     });
   });
 </script>
-
 </body>
 </html>
 
