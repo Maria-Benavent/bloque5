@@ -158,6 +158,9 @@ header {
   display: block;
   margin: 0 auto 10px auto;
 }
+.producto-img.active {
+  display: block;
+}
 
 .producto h3 {
   font-family: 'Racing Sans One', sans-serif;
@@ -171,3 +174,23 @@ header {
   margin: 6px 0 0 0;
 }
 
+.carousel {
+  position: relative;
+}
+.carousel button {
+  position: absolute;
+  top: 40%;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 1.2em;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}
