@@ -162,7 +162,7 @@ header {
 .producto-img.active {
   display: block;
 }
-<!-- carrousel-->
+
 .carousel {
   position: relative;
   display: flex;
@@ -189,7 +189,7 @@ header {
 .carousel .next {
   right: -10px;
 }
-<!-- inicio-->
+
 .hero {
   background-image: url('fotoinicio1.JPG'); 
   background-size: cover;
