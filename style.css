@@ -165,9 +165,7 @@ header {
 <!-- carrousel-->
 .carousel {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .carousel button {
