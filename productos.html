@@ -97,32 +97,22 @@
 <script>
   document.querySelectorAll('.carousel').forEach(carousel => {
     const imgs = carousel.querySelectorAll('.producto-img');
+    let showing = 0;
 
-
-    carousel.dataset.index = 0;
-
-    const updateCarousel = () => {
-      const index = parseInt(carousel.dataset.index);
+    const toggleImages = () => {
       imgs.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
+        img.classList.toggle('active', i === showing);
       });
     };
 
-    carousel.querySelector('.next').addEventListener('click', () => {
-      let index = parseInt(carousel.dataset.index);
-      index = (index + 1) % imgs.length;
-      carousel.dataset.index = index;
-      updateCarousel();
+    carousel.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        showing = showing === 0 ? 1 : 0; // Alterna entre 0 y 1
+        toggleImages();
+      });
     });
 
-    carousel.querySelector('.prev').addEventListener('click', () => {
-      let index = parseInt(carousel.dataset.index);
-      index = (index - 1 + imgs.length) % imgs.length;
-      carousel.dataset.index = index;
-      updateCarousel();
-    });
-
-    updateCarousel();
+    toggleImages(); // Inicializa el primer estado
   });
 </script>
 
