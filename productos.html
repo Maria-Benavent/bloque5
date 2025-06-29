@@ -95,28 +95,31 @@
 </section>
 
    <!--Carrusel básico -->
- <script>
+<script>
   document.querySelectorAll('.carousel').forEach(carousel => {
     const imgs = carousel.querySelectorAll('.producto-img');
     let index = 0;
 
-    const showImage = (newIndex) => {
-      imgs[index].classList.remove('active');
-      index = newIndex;
-      imgs[index].classList.add('active');
+    const updateCarousel = () => {
+      imgs.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
     };
 
     carousel.querySelector('.next').addEventListener('click', () => {
-      const newIndex = (index + 1) % imgs.length;
-      showImage(newIndex);
+      index = (index + 1) % imgs.length;
+      updateCarousel();
     });
 
     carousel.querySelector('.prev').addEventListener('click', () => {
-      const newIndex = (index - 1 + imgs.length) % imgs.length;
-      showImage(newIndex);
+      index = (index - 1 + imgs.length) % imgs.length;
+      updateCarousel();
     });
+
+    updateCarousel(); // inicializa
   });
 </script>
+
 </body>
 </html>
 
