@@ -98,27 +98,35 @@
 <script>
   document.querySelectorAll('.carousel').forEach(carousel => {
     const imgs = carousel.querySelectorAll('.producto-img');
-    let index = 0;
+
+    // Asociar un índice al carrusel usando dataset
+    carousel.dataset.index = 0;
 
     const updateCarousel = () => {
+      const index = parseInt(carousel.dataset.index);
       imgs.forEach((img, i) => {
         img.classList.toggle('active', i === index);
       });
     };
 
     carousel.querySelector('.next').addEventListener('click', () => {
+      let index = parseInt(carousel.dataset.index);
       index = (index + 1) % imgs.length;
+      carousel.dataset.index = index;
       updateCarousel();
     });
 
     carousel.querySelector('.prev').addEventListener('click', () => {
+      let index = parseInt(carousel.dataset.index);
       index = (index - 1 + imgs.length) % imgs.length;
+      carousel.dataset.index = index;
       updateCarousel();
     });
 
-    updateCarousel(); // inicializa
+    updateCarousel();
   });
 </script>
+
 
 </body>
 </html>
