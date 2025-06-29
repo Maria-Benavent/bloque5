@@ -155,42 +155,37 @@ header {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border: 2px solid white;
-  display: block;
+  display: none; 
   margin: 0 auto 10px auto;
 }
+
 .producto-img.active {
   display: block;
 }
 
-.producto h3 {
-  font-family: 'Racing Sans One', sans-serif;
-  font-size: 1.1em;
-  margin: 0;
-}
-
-.producto p {
-  font-size: 1em;
-  color: #ffcc00;
-  margin: 6px 0 0 0;
-}
-
 .carousel {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .carousel button {
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   background: rgba(255,255,255,0.7);
   border: none;
   font-size: 1.2em;
   padding: 4px 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .carousel .prev {
-  left: 0;
+  left: -10px;
 }
 
 .carousel .next {
-  right: 0;
+  right: -10px;
 }
