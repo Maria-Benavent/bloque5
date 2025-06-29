@@ -23,22 +23,58 @@
     </ul>
   </nav>
 
-  <section id="productos">
-    <h2>Nuestros productos</h2>
+<section id="productos">
+  <h2>Nuestros productos</h2>
 
-    <div class="productos-container">
-      <div class="producto">
-        <img src="camiseta1.png" alt="Camiseta Bloque 5" class="producto-img">
-        <h3>Camiseta 'Ready For Departure'</h3>
-        <p>19,90 €</p>
+  <div class="productos-container">
+   #Producto 1
+    <div class="producto">
+      <div class="carousel">
+        <img src="camiseta1-frontal.jpg" class="producto-img active" alt="Frontal camiseta 'Ready For Departure'">
+        <img src="camiseta1-detras.jpg" class="producto-img" alt="Trasera camiseta 'Ready For Departure'">
+        <button class="prev">←</button>
+        <button class="next">→</button>
       </div>
-      <div class="producto">
-        <img src="sudadera1.jpg" alt="Sudadera Bloque 5" class="producto-img">
-        <h3>Sudadera Granate</h3>
-        <p>29,90 €</p>
-      </div>
+      <h3>Camiseta 'Ready For Departure'</h3>
+      <p>19,90 €</p>
+      <a class="cta-email" href="mailto:bloque5oficial@gmail.com?subject=Pedido%20Camiseta%20Ready%20For%20Departure&body=Buenos%20días,%20estaría%20interesado%20en%20comprar%20una%20talla%20X%20de%20%C2%A1Camiseta%20'Ready%20For%20Departure'!%20%C2%BFQu%C3%A9%20tengo%20que%20hacer%3F">Pedir talla</a>
     </div>
-  </section>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <div class="carousel">
+        <img src="sudadera1-frontal.jpg" class="producto-img active" alt="Frontal sudadera granate">
+        <img src="sudadera1-detras.jpg" class="producto-img" alt="Trasera sudadera granate">
+        <button class="prev">←</button>
+        <button class="next">→</button>
+      </div>
+      <h3>Sudadera Granate</h3>
+      <p>29,90 €</p>
+      <a class="cta-email" href="mailto:bloque5oficial@gmail.com?subject=Pedido%20Sudadera%20Granate&body=Buenos%20días,%20estaría%20interesado%20en%20comprar%20una%20talla%20X%20de%20Sudadera%20Granate.%20%C2%BFQu%C3%A9%20tengo%20que%20hacer%3F">Pedir talla</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Carrusel básico
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const imgs = carousel.querySelectorAll('.producto-img');
+    let index = 0;
+
+    carousel.querySelector('.next').addEventListener('click', () => {
+      imgs[index].classList.remove('active');
+      index = (index + 1) % imgs.length;
+      imgs[index].classList.add('active');
+    });
+
+    carousel.querySelector('.prev').addEventListener('click', () => {
+      imgs[index].classList.remove('active');
+      index = (index - 1 + imgs.length) % imgs.length;
+      imgs[index].classList.add('active');
+    });
+  });
+</script>
+
 </body>
 </html>
 
